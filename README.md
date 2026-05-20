@@ -86,6 +86,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 ### Built With
 
 * [![C#][C#]][C#-url]
+* [![.NET][.NET]][.NET-url]
 * [![Blazor][Blazor]][Blazor-url]
 * [![Postgres][Postgres]][Postgres-url]
 
@@ -216,6 +217,8 @@ Project Link: [https://github.com/Vani0904/Budget-Tracker-System](https://github
 <!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
 [C#]: https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white
 [C#-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
+[.NET]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff
+[.NET-url]: https://dotnet.microsoft.com/en-us/
 [Blazor]: https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=fff
 [Blazor-url]: https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor
 [Postgres]: https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white
