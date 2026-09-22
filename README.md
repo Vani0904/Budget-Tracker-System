@@ -21,7 +21,6 @@ The stack may change as the project develops. The README will reflect the techno
 
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
