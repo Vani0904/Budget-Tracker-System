@@ -2,9 +2,23 @@
 
 # Budget Tracker System
 
-A responsive web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries.
+A responsive web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries to aid with budgeting personal finances.
 
 > This project is currently under development. The README and feature list will be updated as new functionality is completed.
+
+## Technology Stack
+
+The planned technology stack is:
+* [![C#][C#]][C#-url]
+* [![.NET][.NET]][.NET-url]
+* [![Blazor][Blazor]][Blazor-url]
+* [![Postgres][Postgres]][Postgres-url]
+- ASP.NET Core
+- Entity Framework Core
+- HTML and CSS
+- Git and GitHub
+
+The stack may change as the project develops. The README will reflect the technologies actually used by the current version.
 
 ## Table of Contents
 
@@ -68,19 +82,6 @@ Planned development stages:
 - Display useful monthly summaries.
 
 Features marked as planned may not yet be implemented.
-
-## Technology Stack
-
-The planned technology stack is:
-
-- C#
-- .NET
-- ASP.NET Core
-- Blazor
-- Entity Framework Core
-- PostgreSQL
-- HTML and CSS
-- Git and GitHub
 
 The stack may change as the project develops. The README will reflect the technologies actually used by the current version.
 
@@ -252,4 +253,15 @@ Javani Morris
 
 This project is currently intended as a personal learning and portfolio project.
 
-Add a formal license when the project’s licensing decision has been made.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[product-screenshot]: images/screenshot.png
+<!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
+[C#]: https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white
+[C#-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
+[.NET]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff
+[.NET-url]: https://dotnet.microsoft.com/en-us/
+[Blazor]: https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=fff
+[Blazor-url]: https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor
+[Postgres]: https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white
+[Postgres-url]: https://www.postgresql.org/
