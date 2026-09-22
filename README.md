@@ -4,6 +4,7 @@
 
 A responsive C#/.NET web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries.
 
+![Status](https://img.shields.io/badge/status-in%20development-orange)
 > This project is currently under development. The README and feature list will be updated as new functionality is completed.
 
 ## Technology Stack
