@@ -86,15 +86,20 @@ The stack may change as the project develops. The README will reflect the techno
 The project is being organised around separate responsibilities:
 
 ```text
-src/
-├── Domain/
-├── Application/
-├── Infrastructure/
-└── Web/
-
-tests/
-├── UnitTests/
-└── IntegrationTests/
+BudgetTracker/
+├── src/
+│   ├── BudgetTracker.Domain/
+│   ├── BudgetTracker.Application/
+│   ├── BudgetTracker.Infrastructure/
+│   └── BudgetTracker.Web/
+├── tests/
+│   ├── BudgetTracker.Domain.Tests/
+│   └── BudgetTracker.Application.Tests/
+├── docs/
+│   ├── requirements.md
+│   ├── domain-model.md
+│   └── decisions.md
+└── README.md
 ```
 
 The exact structure may change while the project is being developed. The aim is to keep domain rules, application logic, persistence and user-interface concerns separate.
