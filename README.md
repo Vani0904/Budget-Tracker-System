@@ -2,7 +2,7 @@
 
 # Budget Tracker System
 
-A responsive web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries to aid with budgeting personal finances.
+A responsive C#/.NET web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries.
 
 > This project is currently under development. The README and feature list will be updated as new functionality is completed.
 
