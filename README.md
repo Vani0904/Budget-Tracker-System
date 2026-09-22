@@ -1,225 +1,255 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
+# Budget Tracker System
 
+A responsive web application for recording income and expenses, organising transactions by category, and viewing personal financial summaries.
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+> This project is currently under development. The README and feature list will be updated as new functionality is completed.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Vani0904/Budget-Tracker-System">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+## Table of Contents
 
-<h3 align="center">Budget Tracker System</h3>
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Roadmap](#roadmap)
+- [Known Limitations](#known-limitations)
+- [Contact](#contact)
+- [License](#license)
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/Vani0904/Budget-Tracker-System"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Vani0904/Budget-Tracker-System">View Demo</a>
-    &middot;
-    <a href="https://github.com/Vani0904/Budget-Tracker-System/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/Vani0904/Budget-Tracker-System/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
+## About the Project
 
+The Budget Tracker System is being developed as a practical full-stack project for managing personal income and expenses.
 
+The project is also being used as a learning vehicle to practise:
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+- Object-oriented programming.
+- Clean separation of responsibilities.
+- Data validation.
+- Database persistence.
+- Web application development.
+- Automated testing.
+- Responsive user-interface design.
 
+The initial version focuses on recording transactions and calculating useful financial summaries. More advanced features will be added gradually after the core functionality is stable.
 
+## Project Status
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Current status: `Early development`
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Planned development stages:
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `Vani0904`, `Budget-Tracker-System`, `twitter_handle`, `javani-morris`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+- [ ] Define the minimum viable product.
+- [ ] Create the core transaction model.
+- [ ] Add transaction validation.
+- [ ] Persist transactions in a database.
+- [ ] Build the transaction management interface.
+- [ ] Add income, expense and balance summaries.
+- [ ] Add filtering by date and category.
+- [ ] Add automated tests.
+- [ ] Improve responsive design.
+- [ ] Deploy a demonstration version.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Features
 
+### Planned core features
 
+- Create income and expense transactions.
+- Assign transactions to categories.
+- Record transaction dates and notes.
+- View a list of transactions.
+- Filter transactions by category and date.
+- Calculate total income.
+- Calculate total expenses.
+- Calculate the current balance.
+- Display useful monthly summaries.
 
-### Built With
+Features marked as planned may not yet be implemented.
 
-* [![C#][C#]][C#-url]
-* [![.NET][.NET]][.NET-url]
-* [![Blazor][Blazor]][Blazor-url]
-* [![Postgres][Postgres]][Postgres-url]
+## Technology Stack
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The planned technology stack is:
 
+- C#
+- .NET
+- ASP.NET Core
+- Blazor
+- Entity Framework Core
+- PostgreSQL
+- HTML and CSS
+- Git and GitHub
 
+The stack may change as the project develops. The README will reflect the technologies actually used by the current version.
 
-<!-- GETTING STARTED -->
+## Project Structure
+
+The project is being organised around separate responsibilities:
+
+```text
+src/
+├── Domain/
+├── Application/
+├── Infrastructure/
+└── Web/
+
+tests/
+├── UnitTests/
+└── IntegrationTests/
+```
+
+The exact structure may change while the project is being developed. The aim is to keep domain rules, application logic, persistence and user-interface concerns separate.
+
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Install the following tools:
 
-### Installation
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [Git](https://git-scm.com/)
+- PostgreSQL
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/Vani0904/Budget-Tracker-System.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin Vani0904/Budget-Tracker-System
-   git remote -v # confirm the changes
-   ```
+Check that .NET is installed:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+dotnet --version
+```
 
+### Clone the repository
 
+```bash
+git clone [https://github.com/Vani0904/Budget-Tracker-System.git](https://github.com/Vani0904/Budget-Tracker-System.git)
+cd Budget-Tracker-System
+```
 
-<!-- USAGE EXAMPLES -->
+### Restore dependencies
+
+```bash
+dotnet restore
+```
+
+### Configure the application
+
+Create or update the local configuration file required by the project.
+
+Do not commit passwords, connection strings containing credentials or other secrets to GitHub.
+
+Example development configuration:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "your-local-development-connection-string"
+  }
+}
+```
+
+### Run the application
+
+```bash
+dotnet run
+```
+
+Open the local URL shown in the terminal.
+
+> These commands will be updated once the application structure and database configuration are complete.
+
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The intended user flow is:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Open the application.
+2. Add an income or expense transaction.
+3. Select a category.
+4. Enter the amount and date.
+5. Save the transaction.
+6. Review the updated balance and summaries.
+7. Filter transactions when reviewing spending.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Screenshots and usage instructions will be added when the first working interface is complete.
 
+## Testing
 
+The project will use automated tests for important domain and application behaviour.
 
-<!-- ROADMAP -->
+Planned test cases include:
+
+- Adding an income transaction.
+- Adding an expense transaction.
+- Calculating the current balance.
+- Rejecting invalid or zero amounts.
+- Filtering by category.
+- Filtering by date range.
+- Calculating summaries for an empty dataset.
+- Preventing one user from accessing another user's transactions.
+
+Run tests with:
+
+```bash
+dotnet test
+```
+
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+### Phase 1: Planning and domain model
 
-See the [open issues](https://github.com/Vani0904/Budget-Tracker-System/issues) for a full list of proposed features (and known issues).
+- [ ] Finalise the MVP scope.
+- [ ] Create low-fidelity wireframes.
+- [ ] Define the transaction domain model.
+- [ ] Define validation rules.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Phase 2: Core functionality
 
+- [ ] Create transactions.
+- [ ] View transactions.
+- [ ] Edit transactions.
+- [ ] Delete transactions.
+- [ ] Calculate balance and summaries.
 
+### Phase 3: Persistence and application structure
 
-<!-- CONTRIBUTING -->
-## Contributing
+- [ ] Add Entity Framework Core.
+- [ ] Add database migrations.
+- [ ] Add persistence services.
+- [ ] Add application-level validation.
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+### Phase 4: User interface
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+- [ ] Build a responsive dashboard.
+- [ ] Build the transaction form.
+- [ ] Build transaction filters.
+- [ ] Add loading, empty and error states.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### Phase 5: Quality and deployment
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] Add automated tests.
+- [ ] Improve accessibility.
+- [ ] Add documentation and screenshots.
+- [ ] Deploy a demonstration version.
 
-### Top contributors:
+## Known Limitations
 
-<a href="https://github.com/Vani0904/Budget-Tracker-System/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Vani0904/Budget-Tracker-System" alt="contrib.rocks image" />
-</a>
+At the current stage:
 
+- The application is still under development.
+- Some planned features are not implemented.
+- Database configuration may not yet be final.
+- No production deployment is currently provided.
+- The application should not be used as a source of financial advice.
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the project_license. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/Vani0904/Budget-Tracker-System](https://github.com/Vani0904/Budget-Tracker-System)
+Javani Morris
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [Vani0904](https://github.com/Vani0904)
+- Project repository: [Budget Tracker System](https://github.com/Vani0904/Budget-Tracker-System)
+- Portfolio: [Portfolio website](https://vani0904.github.io/Portfolio-site/)
 
+## License
 
+This project is currently intended as a personal learning and portfolio project.
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
-<!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
-[C#]: https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white
-[C#-url]: https://learn.microsoft.com/en-us/dotnet/csharp/
-[.NET]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff
-[.NET-url]: https://dotnet.microsoft.com/en-us/
-[Blazor]: https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=fff
-[Blazor-url]: https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor
-[Postgres]: https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white
-[Postgres-url]: https://www.postgresql.org/
+Add a formal license when the project’s licensing decision has been made.
