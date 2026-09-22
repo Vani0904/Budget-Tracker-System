@@ -13,10 +13,6 @@ The planned technology stack is:
 * [![.NET][.NET]][.NET-url]
 * [![Blazor][Blazor]][Blazor-url]
 * [![Postgres][Postgres]][Postgres-url]
-- ASP.NET Core
-- Entity Framework Core
-- HTML and CSS
-- Git and GitHub
 
 The stack may change as the project develops. The README will reflect the technologies actually used by the current version.
 
