@@ -13,7 +13,10 @@ The planned technology stack is:
 * [![C#][C#]][C#-url]
 * [![.NET][.NET]][.NET-url]
 * [![Blazor][Blazor]][Blazor-url]
+* [![SQLite][SQLite]][SQLite-url]
+- SQLite will be used during early local development.
 * [![Postgres][Postgres]][Postgres-url]
+- PostgreSQL may be introduced later when the application is containerised or deployed.
 
 The stack may change as the project develops. The README will reflect the technologies actually used by the current version.
 
@@ -46,6 +49,38 @@ The project is also being used as a learning vehicle to practise:
 
 The initial version focuses on recording transactions and calculating useful financial summaries. More advanced features will be added gradually after the core functionality is stable.
 
+## Product Goal
+
+Budget Tracker System helps an individual record income and expenses, understand where money is going, set simple monthly spending limits, and review their financial position over time.
+
+The first version focuses on clarity and manual control rather than bank integrations or financial advice.
+
+## Minimum Viable Product
+
+The first usable version will allow a signed-in user to:
+
+- Add income and expense transactions.
+- Select from a small set of spending categories.
+- Record a description, amount and date.
+- View transaction history.
+- See total income, total expenses and current balance.
+- Create simple monthly category budgets.
+- Compare actual spending against each budget.
+- Use the application comfortably on desktop and mobile browsers.
+
+## Out of Scope for the MVP
+
+The following are deliberately deferred:
+
+- Automatic bank synchronisation.
+- Automatic transaction categorisation.
+- Push notifications.
+- Subscription cancellation recommendations.
+- Investment, lending or credit products.
+- Financial forecasting or personalised financial advice.
+- Shared household accounts.
+- Native iOS/Android App Store distribution.
+  
 ## Project Status
 
 Current status: `Early development`
@@ -88,17 +123,15 @@ The project is being organised around separate responsibilities:
 ```text
 BudgetTracker/
 ├── src/
-│   ├── BudgetTracker.Domain/
-│   ├── BudgetTracker.Application/
-│   ├── BudgetTracker.Infrastructure/
-│   └── BudgetTracker.Web/
+│   └── BudgetTracker.Console/
 ├── tests/
-│   ├── BudgetTracker.Domain.Tests/
-│   └── BudgetTracker.Application.Tests/
+│   └── BudgetTracker.Tests/
 ├── docs/
-│   ├── requirements.md
+│   ├── mvp.md
+│   ├── user-flows.md
 │   ├── domain-model.md
-│   └── decisions.md
+│   ├── decisions.md
+│   └── wireframes/
 └── README.md
 ```
 
@@ -112,7 +145,7 @@ Install the following tools:
 
 - [.NET SDK](https://dotnet.microsoft.com/download)
 - [Git](https://git-scm.com/)
-- PostgreSQL
+- QL
 
 Check that .NET is installed:
 
@@ -196,42 +229,52 @@ dotnet test
 
 ## Roadmap
 
-### Phase 1: Planning and domain model
+## Roadmap
 
-- [ ] Finalise the MVP scope.
-- [ ] Create low-fidelity wireframes.
-- [ ] Define the transaction domain model.
-- [ ] Define validation rules.
+### Phase 0 — Product definition
+- [ ] Finalise MVP scope.
+- [ ] Define user stories and success criteria.
+- [ ] Create low-fidelity mobile-first wireframes.
+- [ ] Define core entities and business rules.
+- [ ] Record key technical decisions in `docs/decisions.md`.
 
-### Phase 2: Core functionality
+### Phase 1 — Core C# domain
+- [ ] Create a console application.
+- [ ] Add `Transaction`, `Category` and `MonthlyBudget` models.
+- [ ] Validate amounts, dates and required descriptions.
+- [ ] Calculate income, expenses and balance in memory.
 
-- [ ] Create transactions.
-- [ ] View transactions.
-- [ ] Edit transactions.
-- [ ] Delete transactions.
-- [ ] Calculate balance and summaries.
+### Phase 2 — Budgets and reporting rules
+- [ ] Add category spending totals.
+- [ ] Add monthly budget limits.
+- [ ] Calculate remaining/overspent category amounts.
+- [ ] Add monthly summary calculations.
 
-### Phase 3: Persistence and application structure
+### Phase 3 — Persistence
+- [ ] Add EF Core with SQLite.
+- [ ] Create and apply migrations.
+- [ ] Persist transactions, categories and budgets.
+- [ ] Seed default categories.
 
-- [ ] Add Entity Framework Core.
-- [ ] Add database migrations.
-- [ ] Add persistence services.
-- [ ] Add application-level validation.
+### Phase 4 — Web API and testing
+- [ ] Build ASP.NET Core API endpoints.
+- [ ] Introduce request/response DTOs.
+- [ ] Add unit tests for business rules.
+- [ ] Add integration tests for important API behaviour.
 
-### Phase 4: User interface
+### Phase 5 — Authentication and responsive UI
+- [ ] Add user authentication and authorisation.
+- [ ] Ensure all user-owned data is isolated by authenticated user.
+- [ ] Build a responsive Blazor web interface.
+- [ ] Add dashboard, transactions and budgets pages.
+- [ ] Add accessible loading, empty and error states.
 
-- [ ] Build a responsive dashboard.
-- [ ] Build the transaction form.
-- [ ] Build transaction filters.
-- [ ] Add loading, empty and error states.
-
-### Phase 5: Quality and deployment
-
-- [ ] Add automated tests.
-- [ ] Improve accessibility.
-- [ ] Add documentation and screenshots.
+### Phase 6 — Delivery and optional extensions
+- [ ] Containerise with Docker.
+- [ ] Add GitHub Actions build/test workflow.
 - [ ] Deploy a demonstration version.
-
+- [ ] Optionally add Python-based reporting/analysis.
+      
 ## Known Limitations
 
 At the current stage:
@@ -266,3 +309,5 @@ This project is currently intended as a personal learning and portfolio project.
 [Blazor-url]: https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor
 [Postgres]: https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white
 [Postgres-url]: https://www.postgresql.org/
+[SQLite]: https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white
+[SQLite-url]: https://www.sqlite.org/
