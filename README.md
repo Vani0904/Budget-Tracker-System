@@ -229,8 +229,6 @@ dotnet test
 
 ## Roadmap
 
-## Roadmap
-
 ### Phase 0 — Product definition
 - [ ] Finalise MVP scope.
 - [ ] Define user stories and success criteria.
