@@ -16,8 +16,8 @@ As a user, I want to record an expense so that I can track my spending.
 
 ### Acceptance criteria
 
-- I can enter an amount, transaction date, category, and description.
-- The amount, transaction date, category, and description are required.
+- I can enter an amount, transaction date, category, and title.
+- The amount, transaction date, category, and title are required.
 - The amount must be greater than zero and have no more than two decimal places.
 - The transaction date must be a valid date.
 - I can select an expense category from the available preset categories.
@@ -53,12 +53,12 @@ As a user, I want to search and filter my transactions so that I can review spec
 ### Acceptance criteria
 
 - I can open a transaction history containing only my own records.
-- Each entry displays its transaction date, description, category, type, and amount.
+- Each entry displays its transaction date, title, category, type, and amount.
 - Transactions are displayed in transaction-date order, newest first.
 - I can filter transactions by category.
 - I can filter transactions by month and year.
 - I can filter transactions by type: income or expense.
-- I can search transaction descriptions using a case-insensitive text search.
+- I can search transaction titles using a case-insensitive text search.
 - Multiple active filters and the search term work together; results must match all selected conditions.
 - I can see which filters are active and clear them.
 - If no transactions match, I see an explanatory message and an option to clear the filters.
@@ -72,7 +72,7 @@ As a user, I want to edit or delete an existing transaction so that my records r
 
 - I can select an edit or delete action for a transaction I own.
 - Selecting edit opens a form populated with the transaction's existing values.
-- I can update the amount, transaction date, category, and description.
+- I can update the amount, transaction date, category, and title.
 - Edited values follow the same validation rules as transaction creation.
 - Saving valid changes updates the existing transaction rather than creating another one.
 - Cancelling an edit leaves the transaction unchanged.
@@ -133,7 +133,7 @@ As a user, I want to record income so that my monthly summary reflects the money
 ### Acceptance criteria
 
 - I can select income as the transaction type.
-- I can enter an amount, transaction date, and description.
+- I can enter an amount, transaction date, and title.
 - These fields are required.
 - The amount must be greater than zero and have no more than two decimal places.
 - The transaction date must be a valid date.
