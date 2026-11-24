@@ -106,11 +106,6 @@ quick access to recent transactions.
 - Data could not be loaded.
 - Populated dashboard.
 
-### Design note
-
-If category buttons remain on the dashboard, their purpose must be explicit.
-If they filter recent transactions, show the selected filter and provide a
-way to return to all transactions. Otherwise, omit them from the MVP.
 
 ## 2. Transaction history
 
@@ -159,10 +154,6 @@ Allow users to find, review, and access their recorded transactions.
 - Loading.
 - Data could not be loaded.
 
-### Design note
-
-A “View all” action within a date group is only needed if some transactions
-in that group are initially hidden. Otherwise, omit it.
 
 ## 3. Analytics - Spending
 
@@ -209,13 +200,6 @@ is distributed across expense categories.
 - Data could not be loaded.
 - Populated spending breakdown.
 
-### Design note
-
-The chart type remains an implementation decision. The visualisation should
-answer a clear question, such as how spending is distributed by category or
-how spending changes throughout the month.
-
-The category breakdown must remain available as readable text.
 
 ## 4. Analytics - Budgets
 
